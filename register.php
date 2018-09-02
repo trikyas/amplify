@@ -1,3 +1,7 @@
+<?php
+include('includes/handlers/login-handler.php');
+include('includes/handlers/register-handler.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
   <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-
+<!-- Login Section -->
 	<div id="inputContainer">
 		<form id="loginForm" action="register.php" method="POST">
 			<h2>Login to your account</h2>
@@ -18,12 +22,9 @@
 				<label for="loginPassword">Password</label>
 				<input id="loginPassword" name="loginPassword" type="password" required>
 			</p>
-
 			<button type="submit" name="loginButton">LOG IN</button>
-
 		</form>
-
-  <!-- Register Sect -->
+  <!-- Register Section -->
   <form id="registerForm" action="register.php" method="POST">
     <h2>Login to your account</h2>
     <p>
@@ -54,11 +55,8 @@
       <label for="password2">Confirm Password</label>
       <input id="password2" name="password2" type="password" placeholder="••••••••••" required>
     </p>
-
     <button type="submit" name="registerButton">SIGN UP</button>
-
   </form>
 	</div>
-
 </body>
 </html>
