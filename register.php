@@ -1,6 +1,11 @@
 <?php
+include('includes/classes/Account.php');
+include('includes/classes/db.php');
+include('includes/classes/Constants.php');
 include('includes/handlers/login-handler.php');
 include('includes/handlers/register-handler.php');
+
+$account = new Account();
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,34 +31,42 @@ include('includes/handlers/register-handler.php');
 		</form>
   <!-- Register Section -->
   <form id="registerForm" action="register.php" method="POST">
-    <h2>Login to your account</h2>
+    <h2>Create your FREE account today</h2>
     <p>
+     <?php echo $account->getError(Constants::$usernameCharacters); ?>
       <label for="username">Username</label>
-      <input id="username" name="username" type="text" placeholder="Trikyas" required>
+      <input id="username" name="username" type="text" placeholder="Trikyas" />
     </p>
     <p>
+     <?php echo $account->getError(Constants::$firstNameCharacters); ?>
       <label for="firstName">First Name</label>
-      <input id="firstName" name="firstName" type="text" placeholder="Chad" required>
+      <input id="firstName" name="firstName" type="text" placeholder="Chad" />
     </p>
     <p>
+     <?php echo $account->getError(Constants::$lastNameCharacters); ?>
       <label for="lastName">Last Name</label>
-      <input id="lastName" name="lastName" type="text" placeholder="Mooney" required>
+      <input id="lastName" name="lastName" type="text" placeholder="Mooney" />
     </p>
     <p>
+      <?php echo $account->getError(Constants::$emailsDoNotMatch); ?>
+      <?php echo $account->getError(Constants::$emailInvalid); ?>
       <label for="email">Email</label>
-      <input id="email" name="email" type="email" placeholder="trikyas@amplify.com" required>
+      <input id="email" name="email" type="email" placeholder="trikyas@amplify.com" />
     </p>
     <p>
       <label for="email2">Confirm Email</label>
-      <input id="email2" name="email2" type="email" placeholder="trikyas@amplify.com" required>
+      <input id="email2" name="email2" type="email" placeholder="trikyas@amplify.com" />
     </p>
     <p>
+      <?php echo $account->getError(Constants::$passwordsDoNoMatch); ?>
+      <?php echo $account->getError(Constants::$passwordNotAlphanumeric); ?>
+      <?php echo $account->getError(Constants::$passwordCharacters); ?>
       <label for="password">Password</label>
-      <input id="password" name="password" type="password" placeholder="••••••••••" required>
+      <input id="password" name="password" type="password" placeholder="••••••••••" />
     </p>
     <p>
       <label for="password2">Confirm Password</label>
-      <input id="password2" name="password2" type="password" placeholder="••••••••••" required>
+      <input id="password2" name="password2" type="password" placeholder="••••••••••" />
     </p>
     <button type="submit" name="registerButton">SIGN UP</button>
   </form>
