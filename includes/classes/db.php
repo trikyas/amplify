@@ -1,4 +1,5 @@
 <?php
+$timezone = date_default_timezone_set("Australia/Sydney");
 define("DB_SERVER", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "root");

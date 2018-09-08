@@ -27,8 +27,8 @@ if(isset($_POST['registerButton'])) {
   $password = sanitizeFormString($_POST['password']);
   $password2 = sanitizeFormString($_POST['password2']);
   $wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
-  if($wasSuccessful) {
-    header("Location: register.php");
-  }
+	if($wasSuccessful) {
+    header('Location: index.php');
+	}
 }
 ?>
