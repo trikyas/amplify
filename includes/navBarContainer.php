@@ -3,6 +3,8 @@
 
 		<span role="link" tabindex="0" onclick="openPage('index.php')" class="logo">
 			<img src="assets/images/icons/logo.png">
+				Trikyas
+			<h3>AMPLIFY</h3>
 		</span>
 
 

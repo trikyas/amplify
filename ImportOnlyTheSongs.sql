@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 13, 2017 at 12:05 PM
--- Server version: 5.6.20
--- PHP Version: 5.5.15
+-- Generation Time: Sep 10, 2018 at 12:05 PM
+-- Server version: 5.6.38
+-- PHP Version: 7.2.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -79,6 +79,16 @@ INSERT INTO `Songs` (`id`, `title`, `artist`, `album`, `genre`, `duration`, `pat
 (34, 'Adventure', 4, 4, 3, '3:07', 'assets/music/bensound-adventure.mp3 ', 1, 6),
 (35, 'All that', 4, 4, 4, '2:26', 'assets/music/bensound-allthat.mp3 ', 1, 6),
 (36, 'Badass', 4, 4, 5, '1:49', 'assets/music/bensound-badass.mp3 ', 3, 9);
+
+
+
+
+
+
+
+
+
+
 
 --
 -- Indexes for dumped tables
