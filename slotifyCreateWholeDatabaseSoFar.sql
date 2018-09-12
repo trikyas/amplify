@@ -39,12 +39,12 @@ CREATE TABLE IF NOT EXISTS `albums` (
 --
 
 INSERT INTO `albums` (`id`, `title`, `artist`, `genre`, `artworkPath`) VALUES
-(1, 'Bacon and Eggs', 2, 4, 'assets/images/artwork/clearday.jpg'),
-(2, 'Pizza head', 5, 10, 'assets/images/artwork/energy.jpg'),
+(1, 'Run with it', 2, 4, 'assets/images/artwork/clearday.jpg'),
+(2, 'Passing Time', 5, 10, 'assets/images/artwork/energy.jpg'),
 (3, 'Summer Hits', 3, 1, 'assets/images/artwork/goinghigher.jpg'),
-(4, 'The movie soundtrack', 2, 9, 'assets/images/artwork/funkyelement.jpg'),
+(4, 'The soundtracks', 2, 9, 'assets/images/artwork/funkyelement.jpg'),
 (5, 'Best of the Worst', 1, 3, 'assets/images/artwork/popdance.jpg'),
-(6, 'Hello World', 3, 6, 'assets/images/artwork/ukulele.jpg'),
+(6, 'Loved and Played', 3, 6, 'assets/images/artwork/ukulele.jpg'),
 (7, 'Best beats', 4, 7, 'assets/images/artwork/sweet.jpg');
 
 -- --------------------------------------------------------
@@ -64,10 +64,10 @@ CREATE TABLE IF NOT EXISTS `artists` (
 
 INSERT INTO `artists` (`id`, `name`) VALUES
 (1, 'Ben Sound'),
-(2, 'Goofy'),
-(3, 'Bart Simpson'),
-(4, 'Homer'),
-(5, 'Bruce Lee');
+(2, 'Ben Sound'),
+(3, 'Ben Sound'),
+(4, 'Ben Sound'),
+(5, 'Ben Sound');
 
 -- --------------------------------------------------------
 
