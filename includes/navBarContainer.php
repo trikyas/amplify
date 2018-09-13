@@ -6,8 +6,6 @@
 				Trikyas
 			<h3>AMPLIFY</h3>
 		</span>
-
-
 		<div class="group">
 
 			<div class="navItem">

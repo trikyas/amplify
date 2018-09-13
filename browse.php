@@ -1,8 +1,8 @@
-<?php 
-include("includes/includedFiles.php"); 
+<?php
+include("includes/includedFiles.php");
 ?>
 
-<h1 class="pageHeadingBig">You Might Also Like</h1>
+<h1 class="pageHeadingBig">Selected for you!</h1>
 
 <div class="gridViewContainer">
 
@@ -10,7 +10,7 @@ include("includes/includedFiles.php");
 		$albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 10");
 
 		while($row = mysqli_fetch_array($albumQuery)) {
-			
+
 
 
 

@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `albums` (
   `artist` int(11) NOT NULL,
   `genre` int(11) NOT NULL,
   `artworkPath` varchar(500) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `albums`
@@ -56,7 +56,7 @@ INSERT INTO `albums` (`id`, `title`, `artist`, `genre`, `artworkPath`) VALUES
 CREATE TABLE IF NOT EXISTS `artists` (
 `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `artists`
@@ -78,7 +78,7 @@ INSERT INTO `artists` (`id`, `name`) VALUES
 CREATE TABLE IF NOT EXISTS `genres` (
 `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `genres`
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `playlists` (
   `name` varchar(50) NOT NULL,
   `owner` varchar(50) NOT NULL,
   `dateCreated` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -121,7 +121,7 @@ CREATE TABLE IF NOT EXISTS `playlistSongs` (
   `songId` int(11) NOT NULL,
   `playlistId` int(11) NOT NULL,
   `playlistOrder` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `Songs` (
   `path` varchar(500) NOT NULL,
   `albumOrder` int(11) NOT NULL,
   `plays` int(11) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
 
 --
 -- Dumping data for table `Songs`
@@ -198,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(32) NOT NULL,
   `signUpDate` datetime NOT NULL,
   `profilePic` varchar(500) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `users`

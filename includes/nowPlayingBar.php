@@ -39,7 +39,6 @@ $(document).ready(function() {
 		timeFromOffset(e, this);
 	});
 
-
 	$(".volumeBar .progressBar").mousedown(function() {
 		mouseDown = true;
 	});
